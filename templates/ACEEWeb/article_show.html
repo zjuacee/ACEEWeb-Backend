@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.caption }}{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <h2>文章</h2>
+        <h4>{{ article.caption }}</h4>
+        <div>{{ article.content }}</div>
+    </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="content">
+        {% for article in articles %}
+            <h3><a href="{% url "detailarticle" article.id %}">{{ article.caption }}</a></h3>
+            <div>{{ article.content }}</div>
+        {% endfor %}
+    </div>
+{% endblock %}
